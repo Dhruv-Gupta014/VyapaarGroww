@@ -18,11 +18,11 @@ const Header = () => {
   }, []);
 
   // Preload the logo to prevent flash
-  useEffect(() => {
-    const img = new Image();
-    img.onload = () => setLogoLoaded(true);
-    img.src = "/lovable-uploads/b3e763dd-390b-4fe0-9881-bc9a3ff798a2.png";
-  }, []);
+  // useEffect(() => {
+  //   const img = new Image();
+  //   img.onload = () => setLogoLoaded(true);
+  //   img.src = "/lovable-uploads/b3e763dd-390b-4fe0-9881-bc9a3ff798a2.png";
+  // }, []);
 
   const navItems = [
     { name: 'Home', path: '/' },
@@ -42,24 +42,19 @@ const Header = () => {
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <Link to="/" className="flex items-center space-x-3 group">
-            <div className="relative">
-              {logoLoaded ? (
-                <img 
-                  src="/lovable-uploads/b3e763dd-390b-4fe0-9881-bc9a3ff798a2.png" 
-                  alt="VyapaarGroww Logo" 
-                  className="w-12 h-12 object-contain transform group-hover:scale-110 transition-all duration-300"
-                />
-              ) : (
-                <div className="w-12 h-12 bg-gradient-to-r from-blue-400 to-green-500 rounded-lg animate-pulse"></div>
-              )}
-              <div className="absolute -inset-2 bg-gradient-to-r from-blue-400 to-green-500 rounded-xl opacity-20 animate-pulse group-hover:opacity-40 transition-opacity duration-300"></div>
+            <div>
+              <img 
+                src="/VyapaarLogo.png"  // 🟢 Replace with your actual logo file name in /public
+                alt="VyapaarGroww Logo" 
+                className="w-12 h-12 object-contain"
+              />
             </div>
             <div className="text-2xl font-bold text-slate-800">
               <span className="text-slate-700">Vyapaar</span>
               <span className="text-green-600">Groww</span>
             </div>
           </Link>
-          
+
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
             {navItems.map((item) => (
