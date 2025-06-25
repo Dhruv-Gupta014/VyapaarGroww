@@ -44,7 +44,7 @@ const Header = () => {
           <Link to="/" className="flex items-center space-x-3 group">
             <div>
               <img 
-                src="/VyapaarLogo.png"  // 🟢 Replace with your actual logo file name in /public
+                src="/lovable-uploads/b3e763dd-390b-4fe0-9881-bc9a3ff798a2.png"  // 🟢 Replace with your actual logo file name in /public
                 alt="VyapaarGroww Logo" 
                 className="w-12 h-12 object-contain"
               />
