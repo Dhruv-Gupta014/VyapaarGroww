@@ -21,7 +21,7 @@ const Header = () => {
   useEffect(() => {
     const img = new Image();
     img.onload = () => setLogoLoaded(true);
-    img.src = "/lovable-uploads/b3e763dd-390b-4fe0-9881-bc9a3ff798a2.png";
+    img.src = "/lovable-uploads/VyapaarLogo.png";
   }, []);
 
   const navItems = [
